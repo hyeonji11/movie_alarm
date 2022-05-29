@@ -4,6 +4,17 @@ spring:
     url: jdbc:mariadb://localhost:3306/movie_alarm
     username: user1
     password: user1test
+  profiles:
+    include: oauth
+  # Test OAuth
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: test
+            client-secret: test
+            scope: profile, email
 
 management:
   endpoints:
