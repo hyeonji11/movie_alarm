@@ -21,8 +21,16 @@ public class IndexController {
     @GetMapping("/")
     public ResponseEntity<?> index() {
         SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        System.out.println(user);
 
         return new ResponseEntity<>(user, HttpStatus.OK);
+    }
+
+    @GetMapping("/hello")
+    public ResponseEntity<?> hello() {
+        //SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        return new ResponseEntity<>("hello", HttpStatus.OK);
     }
 
 }
