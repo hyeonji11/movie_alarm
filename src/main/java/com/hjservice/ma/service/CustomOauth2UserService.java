@@ -2,9 +2,10 @@ package com.hjservice.ma.service;
 
 import com.hjservice.ma.dto.User;
 import com.hjservice.ma.dto.auth.OAuth2UserInfo;
+import com.hjservice.ma.exception.OAuth2AuthenticationProcessingException;
 import com.hjservice.ma.repository.UserRepository;
 import com.hjservice.ma.security.OAuth2UserInfoFactory;
-import com.sun.security.auth.UserPrincipal;
+import com.hjservice.ma.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.core.AuthenticationException;
