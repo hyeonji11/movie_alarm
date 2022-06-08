@@ -1,8 +1,6 @@
 package com.hjservice.ma.config;
 
-import com.hjservice.ma.security.HttpCookieOAuth2AuthorizationRequestRepository;
-import com.hjservice.ma.security.OAuth2AuthenticationFailureHandler;
-import com.hjservice.ma.security.OAuth2AuthenticationSuccessHandler;
+import com.hjservice.ma.security.*;
 import com.hjservice.ma.service.CustomOauth2UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
