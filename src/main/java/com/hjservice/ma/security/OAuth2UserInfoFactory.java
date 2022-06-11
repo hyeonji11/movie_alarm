@@ -1,9 +1,10 @@
 package com.hjservice.ma.security;
 
+import com.hjservice.ma.dto.auth.AuthProvider;
 import com.hjservice.ma.dto.auth.GoogleOAuth2UserInfo;
 import com.hjservice.ma.dto.auth.OAuth2UserInfo;
+import com.hjservice.ma.exception.OAuth2AuthenticationProcessingException;
 
-import java.security.AuthProvider;
 import java.util.Map;
 
 public class OAuth2UserInfoFactory {

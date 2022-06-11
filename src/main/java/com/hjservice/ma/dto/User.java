@@ -29,6 +29,9 @@ public class User extends BaseTimeEntity { // extends TimeEntity
     @Column
     private String imageUrl;
 
+    @Column
+    private String picture;
+
     @Column(nullable = false)
     private Boolean emailVerified = false;
 

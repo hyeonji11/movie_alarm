@@ -1,6 +1,7 @@
 package com.hjservice.ma.service;
 
 import com.hjservice.ma.dto.User;
+import com.hjservice.ma.dto.auth.AuthProvider;
 import com.hjservice.ma.dto.auth.OAuth2UserInfo;
 import com.hjservice.ma.exception.OAuth2AuthenticationProcessingException;
 import com.hjservice.ma.repository.UserRepository;
@@ -16,7 +17,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import java.security.AuthProvider;
+
 import java.util.Optional;
 
 @RequiredArgsConstructor

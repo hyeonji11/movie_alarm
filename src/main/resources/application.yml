@@ -6,6 +6,10 @@ spring:
     password: user1test
   profiles:
     include: oauth
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 management:
   endpoints:
@@ -22,3 +26,5 @@ management:
 app:
   cors:
     allowedOrigins: http://localhost:8081
+  auth:
+    token-secret: abcafdo!
