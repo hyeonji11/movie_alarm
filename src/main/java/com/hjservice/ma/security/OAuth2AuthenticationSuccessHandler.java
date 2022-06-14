@@ -3,6 +3,7 @@ package com.hjservice.ma.security;
 import com.hjservice.ma.config.AppProperties;
 import com.hjservice.ma.exception.BadRequestException;
 import com.hjservice.ma.util.CookieUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
